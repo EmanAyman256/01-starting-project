@@ -1,0 +1,11 @@
+---
+applications:
+  - name: cmp-deep-dive
+    buildpacks:
+      - nodejs_buildpack
+    memory: 1024M
+    instances: 1
+    path: dist/cmp-deep-dive
+    env:
+      NODE_ENV: production
+      PORT: 8080
